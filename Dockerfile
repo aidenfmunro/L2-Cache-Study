@@ -37,17 +37,17 @@ WORKDIR /root/ChampSim
 RUN vcpkg/bootstrap-vcpkg.sh
 RUN vcpkg/vcpkg install
 
-COPY generate_configs.py .
+COPY ./scripts/generate_configs.py .
 RUN python3 generate_configs.py
 
-COPY ./compile_all.sh .
+COPY ./scripts/compile_all.sh .
 RUN chmod +x compile_all.sh
 RUN ./compile_all.sh
 
-COPY ./download_traces.sh .
+COPY ./scripts/download_traces.sh .
 RUN chmod +x download_traces.sh
 RUN ./download_traces.sh
 
-COPY ./run_all.sh .
+COPY ./scripts/run_all.sh .
 RUN chmod +x run_all.sh
 RUN ./run_all.sh
