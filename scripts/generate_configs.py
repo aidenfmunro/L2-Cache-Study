@@ -27,10 +27,10 @@ for r in REPLACEMENTS:
             continue  # skip invalid config
         for sets, ways in SETS_WAYS:
             cfg = base_config.copy()
-            cfg["replacement"] = r
-            cfg["prefetcher"] = p
-            cfg["l2c_sets"] = sets
-            cfg["l2c_ways"] = ways
+            cfg["L2C"]["replacement"] = r
+            cfg["L2C"]["prefetcher"] = p
+            cfg["L2C"]["sets"] = sets
+            cfg["L2C"]["ways"] = ways
 
             name = f"{r}_{p}_{sets}_{ways}".replace("-", "_")
             path = CONFIG_DIR / f"{name}.json"
