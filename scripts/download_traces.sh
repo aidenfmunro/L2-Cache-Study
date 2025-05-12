@@ -4,9 +4,9 @@ TRACE_DIR="./traces"
 mkdir -p "$TRACE_DIR"
 
 TRACES=(
-  "435.gromacs-228B.champsimtrace.xz"
-  "649.fotonik3d_s-10881B.champsimtrace.xz"
-  "453.povray-887B.champsimtrace.xz"
+  "429.mcf-22B.champsimtrace.xz"
+  "456.hmmer-88B.champsimtrace.xz"
+  "623.xalancbmk_s-10B.champsimtrace.xz"
 )
 
 # Base URL

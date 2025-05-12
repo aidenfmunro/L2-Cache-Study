@@ -3,7 +3,7 @@ import os
 import matplotlib.pyplot as plt
 from collections import defaultdict
 
-DATA_DIR = "./results"  # Укажи путь к папке с файлами
+DATA_DIR = "./results" 
 PICTURES_DIR = "./pictures"
 os.makedirs("pictures", exist_ok=True)
 # Словарь: trace_name -> {config_name: hit_rate}
